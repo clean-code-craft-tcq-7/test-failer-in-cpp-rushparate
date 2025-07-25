@@ -11,7 +11,7 @@ char size(int cms) {
         sizeName = 'L';
     }
     else{
-        sizeName = 'XL';
+        sizeName = 'X';
     }
     return sizeName;
 }
@@ -23,6 +23,6 @@ void testTshirtSize() {
     assert(size(42) == 'M');
     assert(size(38) == 'S');
     assert(size(43) == 'L');
-    aeert(size(48) == 'XL');
+    aeert(size(48) == 'X');
     std::cout << "All is well (maybe!)\n";
 }
